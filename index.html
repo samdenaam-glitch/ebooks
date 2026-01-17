@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreeReads | Download Free eBooks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-book-open"></i>
+                <h1>Free<span>Reads</span></h1>
+            </div>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#featured">Featured</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#all-ebooks">All eBooks</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-actions">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search eBooks...">
+                </div>
+                <a href="#" class="btn btn-small" id="signInBtn">Sign In</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Discover Thousands of Free eBooks</h2>
+            <p>Download high-quality eBooks for free in various categories including fiction, non-fiction, academic, and more. No sign-up required for most books!</p>
+            <div class="hero-buttons">
+                <a href="#featured" class="btn">Browse eBooks</a>
+                <a href="#categories" class="btn btn-outline">Explore Categories</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured eBooks -->
+    <section id="featured">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured eBooks</h2>
+            </div>
+            <p class="section-subtitle">Handpicked selection of popular free eBooks across different genres</p>
+            
+            <div class="featured-grid" id="featuredEbooks">
+                <!-- Featured ebooks will be dynamically loaded -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section id="categories" class="light-bg">
+        <div class="container">
+            <div class="section-title">
+                <h2>Browse by Category</h2>
+            </div>
+            <p class="section-subtitle">Find eBooks in your favorite genres and subjects</p>
+            
+            <div class="categories-grid">
+                <div class="category-card" data-category="fiction">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Fiction</h3>
+                    <p>Novels, short stories, and more</p>
+                </div>
+                <div class="category-card" data-category="nonfiction">
+                    <i class="fas fa-globe"></i>
+                    <h3>Non-Fiction</h3>
+                    <p>Biographies, history, science</p>
+                </div>
+                <div class="category-card" data-category="academic">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Academic</h3>
+                    <p>Textbooks, research papers</p>
+                </div>
+                <div class="category-card" data-category="business">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Business</h3>
+                    <p>Finance, marketing, management</p>
+                </div>
+                <div class="category-card" data-category="technology">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Technology</h3>
+                    <p>Programming, AI, cybersecurity</p>
+                </div>
+                <div class="category-card" data-category="selfhelp">
+                    <i class="fas fa-heart"></i>
+                    <h3>Self-Help</h3>
+                    <p>Personal development, motivation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <i class="fas fa-book"></i>
+                    <div class="stat-number">10,284+</div>
+                    <div class="stat-text">Free eBooks</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <div class="stat-number">256,430+</div>
+                    <div class="stat-text">Happy Readers</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-download"></i>
+                    <div class="stat-number">1.2M+</div>
+                    <div class="stat-text">Downloads</div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-star"></i>
+                    <div class="stat-number">4.8/5</div>
+                    <div class="stat-text">Average Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works">
+        <div class="container">
+            <div class="section-title">
+                <h2>How It Works</h2>
+            </div>
+            <p class="section-subtitle">Get free eBooks in just three simple steps</p>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Browse & Select</h3>
+                    <p>Explore our vast collection of free eBooks by category or use the search function.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Preview & Download</h3>
+                    <p>Click on any eBook to see details, read a preview, and download in your preferred format.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Read & Enjoy</h3>
+                    <p>Open the eBook on any device and enjoy reading completely free!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- All eBooks Section -->
+    <section id="all-ebooks">
+        <div class="container">
+            <div class="section-title">
+                <h2>All eBooks</h2>
+            </div>
+            <p class="section-subtitle">Browse our complete collection of free eBooks</p>
+            
+            <div class="ebooks-grid" id="allEbooks">
+                <!-- All ebooks will be dynamically loaded -->
+            </div>
+            
+            <div class="load-more-container">
+                <button class="btn btn-secondary" id="loadMore">Load More eBooks</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Free<span>Reads</span></h2>
+                    <p>Your gateway to thousands of free eBooks. We believe knowledge should be accessible to everyone.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#featured">Featured eBooks</a></li>
+                        <li><a href="#categories">Categories</a></li>
+                        <li><a href="#all-ebooks">All eBooks</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to get notified about new free eBooks and special offers.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <input type="email" id="newsletterEmail" placeholder="Your email address" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 FreeReads. All rights reserved. | All eBooks are free and legal to download.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- eBook Details Modal -->
+    <div class="modal" id="ebookModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Modal content will be dynamically loaded -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
